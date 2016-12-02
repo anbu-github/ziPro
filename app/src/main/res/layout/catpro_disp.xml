@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff8f0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#80000000"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    style="@style/TextviewStyle_space"
+                    android:id="@+id/tv_species"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.92" />
+
+                <ImageView
+                    android:id="@+id/img_prodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:layout_below="@+id/cat_sel_spinner"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/ic_delete_forever_black_24dp"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitXY" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_thumbnail"
+                android:layout_width="90dp"
+                android:layout_height="110dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:gravity="center_horizontal"
+                android:scaleType="fitXY" />
+
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/cat_sel_spinner1"
+                    android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    android:layout_marginTop="80dp"
+                    android:entries="@array/uom_qty"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/cat_sel_spinner"
+                    android:layout_alignStart="@+id/cat_sel_spinner" />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/cat_sel_spinner"
+                    android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="81dp"
+                    android:layout_marginEnd="81dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <View
+                android:id="@+id/View1"
+                style="@style/Divider_Horizontal"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

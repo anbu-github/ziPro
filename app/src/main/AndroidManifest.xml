@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.purplefront.jiro_dev" >
+
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+    <application android:name="com.purplefront.jiro_dev.controller.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.purplefront.jiro_dev.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.purplefront.jiro_dev.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustPan|adjustResize"/>
+        <activity android:name="com.purplefront.jiro_dev.LoginActivity"/>
+
+        <activity android:name="com.purplefront.jiro_dev.SubCategory"/>
+        <activity android:name="com.purplefront.jiro_dev.Product_list"/>
+        <activity android:name="com.purplefront.jiro_dev.Product_sublist"/>
+        <activity android:name="com.purplefront.jiro_dev.Product_Description"/>
+        <activity android:name="com.purplefront.jiro_dev.Memberslist"/>
+        <activity android:name="com.purplefront.jiro_dev.MembersProfileView"/>
+        <activity android:name="com.purplefront.jiro_dev.Customerlist"/>
+        <activity android:name="com.purplefront.jiro_dev.CustMembersProfileView"/>
+        <activity android:name="com.purplefront.jiro_dev.Customermemlist"/>
+        <activity android:name="com.purplefront.jiro_dev.ViewContact"/>
+        <activity android:name="com.purplefront.jiro_dev.OrderDetails"/>
+        <activity android:name="com.purplefront.jiro_dev.OrderCreate"/>
+        <activity android:name="com.purplefront.jiro_dev.OrderAddress"/>
+        <activity android:name="com.purplefront.jiro_dev.DisplayCat"/>
+        <activity android:name="com.purplefront.jiro_dev.Product_Disp"/>
+        <activity android:name="com.purplefront.jiro_dev.Select_Product"/>
+        <activity android:name="com.purplefront.jiro_dev.ReviwOrder"/>
+        <activity android:name="com.purplefront.jiro_dev.CatalogView"/>
+        <activity android:name="com.purplefront.jiro_dev.Attrbute_View"/>
+        <activity android:name="com.purplefront.jiro_dev.OrderView"/>
+        <activity android:name="com.purplefront.jiro_dev.CustomAttr_Edit"/>
+        <activity android:name="com.purplefront.jiro_dev.CreateCustomer"/>
+        <activity android:name="com.purplefront.jiro_dev.Create_CustomAtt"/>
+        <activity android:name="com.purplefront.jiro_dev.Reset_password"/>
+        <activity android:name="com.purplefront.jiro_dev.CreateCust_Address"/>
+        <activity android:name="com.purplefront.jiro_dev.CreateCustomerContact"/>
+        <activity android:name="com.purplefront.jiro_dev.GroupVisitActivity"/>
+        <activity android:name="com.purplefront.jiro_dev.CreateVisitorCust"/>
+        <activity android:name="com.purplefront.jiro_dev.SchedulelistDisplay"/>
+        <activity android:name="com.purplefront.jiro_dev.CompletedVisitDisplay"/>
+        <activity android:name="com.purplefront.jiro_dev.CustomerFragActivity"/>
+        <activity android:name="com.purplefront.jiro_dev.CustMembersProfileView1"/>
+        <activity android:name="com.purplefront.jiro_dev.ViewContact1"/>
+
+    </application>
+
+</manifest>

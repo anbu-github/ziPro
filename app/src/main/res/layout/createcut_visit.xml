@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/scrollview"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:text="@string/customer_Name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#696e79"
+            style="@style/TextviewStyle_space_dark_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border"
+            android:id="@+id/customer_layout"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/cus_list"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_contact1"
+            android:id="@+id/textView3"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/customer_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/TextviewStyle_space_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/cust_company_list"
+                android:spinnerMode="dialog"
+
+                android:layout_marginRight="10dp"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/addlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_address"
+            android:id="@+id/textView4"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/customer_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/TextviewStyle_space_blue" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cust_address"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rg5r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Now" />
+
+            <RadioButton
+                android:id="@+id/rg5r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Later" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/custnotelayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TextviewStyle_space_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Customer Notes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/title_color" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/enternotes"
+                android:background="@drawable/background_edittext"
+                android:textSize="18dip"
+                android:ems="10"
+                android:padding="4dip"
+                android:layout_marginLeft="20dp"
+                android:lines="10"
+                android:visibility="visible"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:minLines="5"
+                android:gravity="top|left"
+                android:scrollbars="vertical"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/enter_notes">
+                <requestFocus />
+            </EditText>
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/custattrlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+            android:id="@+id/textcustattr"
+            style="@style/TextviewStyle_space_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+            android:text="Customer Attribute"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/title_color" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/customattribute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginLeft="20dp"
+                    android:hint="@string/enter_attr">
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/latervisitlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expected_visittime"
+            android:id="@+id/expected_pickup"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/customer_company_list"
+            style="@style/TextviewStyle_space_blue"
+            android:layout_marginLeft="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/layout_border"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DD-MM-YYYY"
+                    android:maxLength="10"
+                    android:layout_gravity="center"
+                    android:inputType="datetime"
+                    android:id="@+id/expect_pickup_date"
+                    android:padding="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#FF000000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/time_layout"
+                android:layout_marginLeft="10dp"
+
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expect_pickup_time"
+                    android:text="HH-MM"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

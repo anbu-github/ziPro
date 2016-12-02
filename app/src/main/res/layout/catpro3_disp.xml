@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#e1e1e1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Large Text"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:id="@+id/tv_species"
+            android:textSize="20dp"
+             />
+
+
+        <ImageView
+            android:id="@+id/img_prodel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tint="@color/blue"
+            android:layout_below="@+id/cat_sel_spinner"
+            android:src="@drawable/ic_action_delete"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cat_sel_spinner"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/img_thumbnail"
+                android:layout_marginRight="20dp"
+                />
+
+
+            <!--<LinearLayout-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textview_discount_price"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:textColor="@color/color_primary_dark" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textview_product_price"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:textColor="@color/text_gray" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textview_discount"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:textColor="@color/color_primary_dark" />-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/textview_minus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:text="@string/qty"
+                     />
+
+                <EditText
+                    android:id="@+id/edittext_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_box_counter_selected"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="Total :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textSize="18sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_toLeftOf="@+id/textview_plus"
+                        android:id="@+id/total"
+                        android:layout_alignParentTop="true" />
+
+                    <TextView
+                        android:id="@+id/totalamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/text_gray"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"/>
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/totalamt1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="00000000"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:textColor="@color/text_gray"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentEnd="true" />-->
+
+
+            <!--</RelativeLayout>-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="color_primary">#3F51B5</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#33b5e5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#008000</color>
+
+    <color name="divider_grey">#b6b6b6</color>
+    <color name="color_primary_dark">#303F9F</color>
+
+    <color name="text_black">#000000</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="md_white_1000">#ffffff</color>
+
+    <color name="background_screen">#EEEEEE</color>
+
+    <color name="title_color">#696e79</color>
+
+    <color name="text_gray">#727272</color>
+
+    <color name="light_grey">#727272</color>
+
+    <color name="title_bar_color">#919191</color>
+
+    <color name="md_blue_grey_50">#eceff1</color>
+    <color name="md_blue_grey_100">#cfd8dc</color>
+    <color name="md_blue_grey_200">#b0bec5</color>
+    <color name="md_blue_grey_300">#90a4ae</color>
+    <color name="md_blue_grey_400">#78909c</color>
+    <color name="md_blue_grey_500">#607d8b</color>
+    <color name="md_blue_grey_600">#546e7a</color>
+    <color name="md_blue_grey_700">#455a64</color>
+    <color name="md_blue_grey_800">#37474f</color>
+    <color name="md_blue_grey_900">#263238</color>
+    <color name="graylight">#f7f7f7</color>
+
+    <color name="md_green_500">#259b24</color>
+    <color name="bar_color">#d42227</color>
+
+    <!--version 1.4-->
+
+    <color name="iconTint">@color/blue</color>
+    <!--
+        <color name="iconTint">#8e8e8e</color>
+    -->
+    <color name="lightGray">#bababa</color>
+
+    <color name="accentLight">#ff988db6</color>
+    <color name="background">#eeeeee</color>
+    <color name="textLightGray">#8f8f8f</color>
+    <color name="lightblack">#C0C0C0</color>
+
+    <color name="black">#000000</color>
+
+
+</resources>

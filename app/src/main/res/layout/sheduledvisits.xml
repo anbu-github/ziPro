@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:visibility="gone"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <ListView
+        android:id="@+id/shedulelview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <ImageButton
+        android:id="@+id/btn_add_cusvisit"
+        android:layout_width="@dimen/fab_button_diameter"
+        android:layout_height="@dimen/fab_button_diameter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fab_button_margin_bottom"
+        android:background="@drawable/fab_shape"
+        android:layout_gravity="bottom"
+        android:src="@drawable/fab_ic_add"
+        android:tint="@android:color/white"/>
+
+</RelativeLayout>
